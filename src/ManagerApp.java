@@ -22,6 +22,12 @@ public class ManagerApp {
     }
 
     public static void SayHello(Employee employee) {
-        System.out.println("Hello " + employee.name);
+        if(employee instanceof VicePresident vicePresident) {
+            System.out.println("Hello " + vicePresident.name + " my name is VP");
+        }else if(employee instanceof Manager manager){
+            System.out.println("Hello " + manager.name + " my name is Manager");
+        }else {
+            System.out.println("Hello " + employee.name);
+        }
     }
 }
