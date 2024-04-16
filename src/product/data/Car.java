@@ -1,6 +1,6 @@
 package product.data;
 
-public interface Car {
+public interface Car extends Brand, Maintenance {
     void setDrive(String name);
     String getDrive();
 
