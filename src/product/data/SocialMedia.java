@@ -1,7 +1,7 @@
 package product.data;
 
 public class SocialMedia {
-    public String name;
+    private String name;
 
     final void setName(String name){
         this.name = name;
