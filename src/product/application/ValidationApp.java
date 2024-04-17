@@ -16,5 +16,8 @@ public class ValidationApp {
         } finally {
             System.out.println("Selalu di eksekusi");
         }
+
+        LoginRequest loginRequest1 = new LoginRequest("", "rahasia");
+        ValidationUtil.validateRuntime(loginRequest1);
     }
 }
